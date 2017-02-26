@@ -1,0 +1,10 @@
+<h1>Create Page</h1>
+<h2>Please Create your details...</h2>
+<form action='' methods='post' accept-charset="utf-8">
+  <%= @user.each do |user| %>
+    First Name<br>
+    <input type="text" name="user[first_name]">
+    Last Name<br>
+    <input type="text" name="user[last_name]">
+   <% end %>
+</form>
